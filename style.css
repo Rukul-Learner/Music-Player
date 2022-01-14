@@ -193,19 +193,71 @@ body {
 }
 
 /* Defining Breakpoints */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px){
     .music-player {
-        width: 90vw !important;
-        height: 90vh !important;
+        width: 90vw;
+        height: 90vh;
     }
 
     .music-name {
-        font-size: 80px;
-        font-weight: 900;
+        font-size: 100px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        margin-top: 5%;
     }
 
     .artist-name {
-        font-size: 40px;
+        font-size: 55px;
+    }
+
+    .disk {
+        height: 350px;
+        width: 350px;
+        margin: 100px auto;
+    }
+
+    .seek-bar {
+        height: 12px;
+    }
+
+    .current-time, .song-duration {
+        font-size: 30px;
+    }
+
+    .controls {
+        margin-top: 50px;
+    }
+
+    .play-btn {
+        height: 150px;
+        width: 150px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .play-btn.pause span:nth-child(1) {
+        width: 35%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        border-radius: 0;
+        clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+        height: 35%;
+    }
+
+    .play-btn span {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 40px;
+        border-radius: 2px;
+        background: #5f7a61;
+        transition: .5s;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
 
