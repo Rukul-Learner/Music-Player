@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
 </head>
 
 <body>
+    <audio src="" id="audio"></audio>
     <div class="music-player">
         <h1 class="music-name">song one</h1>
         <p class="artist-name">artist</p>
@@ -19,12 +19,16 @@
             <span class="song-duration">00:00</span>
         </div>
         <div class="controls">
+            <button class="btn backward-btn"><img src="images/pre.png" alt="previous song button"></button>
             <button class="play-btn pause">
                 <span></span>
                 <span></span>
             </button>
+            <button class="btn forward-btn"><img src="images/nxt.png" alt=""></button>
         </div>
     </div>
+    <script src="data.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
 </body>
 
 </html>
